@@ -101,7 +101,7 @@ CREATE TABLE `feedback` (
 
 LOCK TABLES `feedback` WRITE;
 /*!40000 ALTER TABLE `feedback` DISABLE KEYS */;
-INSERT INTO `feedback` VALUES (1,4,3,4,5,'Not bed',2,2),(2,5,4,5,4,NULL,3,1);
+INSERT INTO `feedback` VALUES (1,4,3,4,5,'Not bed',2,2),(2,5,4,5,4,'NULL',3,1);
 /*!40000 ALTER TABLE `feedback` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -322,7 +322,7 @@ DROP TABLE IF EXISTS `user`;
 CREATE TABLE `user` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `name` varchar(30) NOT NULL,
-  `e-mail` varchar(30) NOT NULL,
+  `email` varchar(30) NOT NULL,
   `password` varchar(10) NOT NULL,
   `birthday` date NOT NULL,
   `age` tinyint(3) unsigned NOT NULL,
@@ -354,4 +354,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-09-04 16:47:03
+-- Dump completed on 2014-09-06 21:21:36
